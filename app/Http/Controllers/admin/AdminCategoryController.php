@@ -3,12 +3,11 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Models\Category;
+use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-
-class CategoryController extends Controller
+class AdminCategoryController extends Controller
 {
     public function category_add(Request $request)
     {

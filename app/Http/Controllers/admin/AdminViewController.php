@@ -3,48 +3,51 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
-class ViewController extends Controller
+class AdminViewController extends Controller
 {
     public function index()
     {
-        $view = 'index';
+        $view = 'admin.index';
         if (view()->exists($view)) {
             return view($view);
         }
     }
     public function login()
     {
-        $view = 'login';
+
+        $view = 'admin.login';
         if (view()->exists($view)) {
             return view($view);
         }
     }
     public function settings()
     {
-        $view = 'settings';
+        $view = 'admin.settings';
         if (view()->exists($view)) {
             return view($view);
         }
     }
     public function profile()
     {
-        $view = 'profile';
+        $view = 'admin.profile';
         if (view()->exists($view)) {
             return view($view);
         }
     }
     public function register()
     {
-        $view = 'register';
+        $view = 'admin.register';
         if (view()->exists($view)) {
             return view($view);
         }
     }
     public function add()
     {
-        $view = 'add';
+        $view = 'admin.add';
         $categories = Category::all();
         if (view()->exists($view)) {
             return view($view, compact('categories'));
@@ -52,56 +55,56 @@ class ViewController extends Controller
     }
     public function invoice()
     {
-        $view = 'invoice';
+        $view = 'admin.invoice';
         if (view()->exists($view)) {
             return view($view);
         }
     }
     public function orders()
     {
-        $view = 'orders';
+        $view = 'admin.orders';
         if (view()->exists($view)) {
             return view($view);
         }
     }
     public function customers()
     {
-        $view = 'customers';
+        $view = 'admin.customers';
         if (view()->exists($view)) {
             return view($view);
         }
     }
     public function shipments()
     {
-        $view = 'index';
+        $view = 'admin.index';
         if (view()->exists($view)) {
             return view($view);
         }
     }
     public function lockscreen()
     {
-        $view = 'lockscreen';
+        $view = 'admin.lockscreen';
         if (view()->exists($view)) {
             return view($view);
         }
     }
     public function reviews()
     {
-        $view = 'reviews';
+        $view = 'admin.reviews';
         if (view()->exists($view)) {
             return view($view);
         }
     }
     public function detail()
     {
-        $view = 'products-details';
+        $view = 'admin.products-details';
         if (view()->exists($view)) {
             return view($view);
         }
     }
     public function list()
     {
-        $view = 'product-list';
+        $view = 'admin.product-list';
         $products = Product::all();
         if (view()->exists($view)) {
             return view($view, compact('products'));
@@ -109,14 +112,14 @@ class ViewController extends Controller
     }
     public function catalogue()
     {
-        $view = 'catalogue';
+        $view = 'admin.catalogue';
         if (view()->exists($view)) {
             return view($view);
         }
     }
     public function password_recovery()
     {
-        $view = 'password-recovery';
+        $view = 'admin.password-recovery';
         if (view()->exists($view)) {
             return view($view);
         }
@@ -124,14 +127,14 @@ class ViewController extends Controller
     public function category()
     {
         $categories = Category::all();
-        $view = 'category';
+        $view = 'admin.category';
         if (view()->exists($view)) {
             return view($view, compact('categories'));
         }
     }
     public function add_category()
     {
-        $view = 'add_category';
+        $view = 'admin.add_category';
         if (view()->exists($view)) {
             return view($view);
         }
