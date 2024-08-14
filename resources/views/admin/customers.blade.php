@@ -356,33 +356,7 @@
 <!-- ============================================================== -->
 <!-- All Jquery -->
 <!-- ============================================================== -->
-<script src="../assets/vendors/jquery/jquery.min.js"></script>
-<!-- Bootstrap popper Core JavaScript -->
-<script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- slimscrollbar scrollbar JavaScript -->
-<script src="../assets/vendors/ps/perfect-scrollbar.jquery.min.js"></script>
-<!--Wave Effects -->
-<script src="js/waves.js"></script>
-<!--Menu sidebar -->
-<script src="js/sidebarmenu.js"></script>
-<!--Custom JavaScript -->
-<script src="js/custom.min.js"></script>
-<!-- This is data table -->
-<script src="../assets/vendors/datatables/jquery.dataTables.min.js"></script>
-<!-- start - This is for export functionality only -->
-<script src="../assets/vendors/datatables-2/buttons/dataTables.buttons.min.js"></script>
-<script src="../assets/vendors/datatables-2/buttons/buttons.flash.min.js"></script>
-<script src="../assets/vendors/datatables-2/pdfmake/jszip.min.js"></script>
-<script src="../assets/vendors/datatables-2/pdfmake/pdfmake.min.js"></script>
-<script src="../assets/vendors/datatables-2/pdfmake/vfs_fonts.js"></script>
-<script src="../assets/vendors/datatables-2/buttons/buttons.html5.min.js"></script>
-<script src="../assets/vendors/datatables-2/buttons/buttons.print.min.js"></script>
-<!-- end - This is for export functionality only -->
-<script src="js/support-tickets.js"></script>
-<!-- ============================================================== -->
-<!-- Style switcher -->
-<!-- ============================================================== -->
-<script src="../assets/vendors/styleswitcher/jQuery.style.switcher.js"></script>
+@include('layouts.script')
 </body>
 
 

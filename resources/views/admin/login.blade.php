@@ -15,14 +15,14 @@
         href="https://www.creativethemes.co.in/buy-creativetheme-html-template/organicfood-store/image-html/html/ecommerce/assets/images/favicon.ico">
     <title>Organic Admin Panel</title>
     <!-- Bootstrap Core CSS -->
-    <link href="../assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('/assets2/vendors/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- page css -->
-    <link href="css/pages/login-register-lock.css" rel="stylesheet">
+    <link href="{{ asset('css/pages/login-register-lock.css" rel="stylesheet') }}">
     <!-- Custom CSS -->
-    <link href="css/master-stylesheet.css" rel="stylesheet">
+    <link href="{{ asset('css/master-stylesheet.css') }}" rel="stylesheet">
 
     <!-- You can change the theme colors from here -->
-    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <link href="{{ asset('css/colors/default.css') }}" id="theme" rel="stylesheet">
 
 </head>
 

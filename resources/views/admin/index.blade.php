@@ -1,18 +1,18 @@
-﻿@include('layouts.header')
+﻿@include('layoutsAdmin.header')
 <!-- ============================================================== -->
 <!-- Main wrapper - style you can find in pages.scss -->
 <!-- ============================================================== -->
 <div id="main-wrapper">
     <!-- ============================================================== -->
     <!-- Topbar header - style you can find in pages.scss -->
-    @include('layouts.navbar')
+    @include('layoutsAdmin.navbar')
     <!-- ============================================================== -->
     <!-- End Topbar header -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
     <!-- Left Sidebar - style you can find in sidebar.scss  -->
     <!-- ============================================================== -->
-    @include('layouts.sidebar')
+    @include('layoutsAdmin.sidebar')
     <!-- ============================================================== -->
     <!-- End Left Sidebar - style you can find in sidebar.scss  -->
     <!-- ============================================================== -->
@@ -274,7 +274,7 @@
         <!-- ============================================================== -->
         <!-- footer -->
         <!-- ============================================================== -->
-        @include('layouts.footer')
+        @include('layoutsAdmin.footer')
         <!-- ============================================================== -->
         <!-- End footer -->
         <!-- ============================================================== -->
@@ -289,58 +289,7 @@
 <!-- ============================================================== -->
 <!-- All Jquery -->
 <!-- ============================================================== -->
-<script src="../assets/vendors/jquery/jquery.min.js"></script>
-<!-- Bootstrap popper Core JavaScript -->
-<script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- slimscrollbar scrollbar JavaScript -->
-<script src="../assets/vendors/ps/perfect-scrollbar.jquery.min.js"></script>
-<!--Wave Effects -->
-<script src="js/waves.js"></script>
-<!--Menu sidebar -->
-<script src="js/sidebarmenu.js"></script>
-<!--Custom JavaScript -->
-<script src="js/custom.min.js"></script>
-<!-- This is data table -->
-<script src="../assets/vendors/datatables/jquery.dataTables.min.js"></script>
-<!-- start - This is for export functionality only -->
-<script src="../assets/vendors/datatables-2/buttons/dataTables.buttons.min.js"></script>
-<script src="../assets/vendors/datatables-2/buttons/buttons.flash.min.js"></script>
-<script src="../assets/vendors/datatables-2/pdfmake/jszip.min.js"></script>
-<script src="../assets/vendors/datatables-2/pdfmake/pdfmake.min.js"></script>
-<script src="../assets/vendors/datatables-2/pdfmake/vfs_fonts.js"></script>
-<script src="../assets/vendors/datatables-2/buttons/buttons.html5.min.js"></script>
-<script src="../assets/vendors/datatables-2/buttons/buttons.print.min.js"></script>
-<!-- end - This is for export functionality only -->
-<script src="js/support-tickets.js"></script>
-<!--jquery knob -->
-<script src="../assets/vendors/knob/jquery.knob.js"></script>
-<script src="js/knob-init.js"></script>
-<!-- ============================================================== -->
-<!-- Style switcher -->
-<!-- ============================================================== -->
-<script src="../assets/vendors/styleswitcher/jQuery.style.switcher.js"></script>
-<!--Morris JavaScript -->
-<script src="../assets/vendors/raphael/raphael-min.js"></script>
-<script src="../assets/vendors/morrisjs/morris.js"></script>
-<!-- maps -->
-<script src="../../../../../../../www.amcharts.com/lib/4/maps.js"></script>
-<!-- maps -->
-<!-- Editable -->
-<script src="../assets/vendors/jsgrid/db.js"></script>
-<script src="../assets/vendors/jsgrid/dist/jsgrid.min.js"></script>
-<script src="js/jsgrid-init.js"></script>
-<script src="../assets/vendors/jsgrid/jsgrid-data.js"></script>
-<!-- Resources -->
-<script src="../assets/vendors/amcharts/core2.js"></script>
-<script src="../assets/vendors/amcharts/maps2.js"></script>
-<script src="../assets/vendors/amcharts/worldLow.js"></script>
-<script src="../assets/vendors/amcharts/animated2.js"></script>
-<!--Sparkline JavaScript -->
-<script src="../assets/vendors/sparkline/jquery.sparkline.min.js"></script>
-<script src="js/map-ecommerce.js"></script>
-<script src="js/ecommerce-dashboard.js"></script>
-<!--Sparkline JavaScript -->
-<script src="../assets/vendors/sparkline/jquery.sparkline.min.js"></script>
+@include('layoutsAdmin.script')
 </body>
 
 

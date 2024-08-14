@@ -43,15 +43,15 @@ Route::get('/logout', [ViewController::class, 'logout'])->name('logout');
 
 
 
-Route::get('login', [AdminViewController::class, 'login'])->name('login');
+Route::get('admin/login', [AdminViewController::class, 'login'])->name('login');
 Route::get('register', [AdminViewController::class, 'register'])->name('register');
 Route::post('register', [AdminAuthController::class, 'register'])->name('register');
 Route::post('login', [AdminAuthController::class, 'login'])->name('login');
 
 
 
+Route::get('/', [AdminViewController::class, 'index'])->name('index');
 Route::middleware(['auth'])->prefix('admin')->group(function () {
-    Route::get('/', [AdminViewController::class, 'index'])->name('index');
     Route::get('settings', [AdminViewController::class, 'settings'])->name('settings');
     Route::get('profile', [AdminViewController::class, 'profile'])->name('profile');
     Route::get('add', [AdminViewController::class, 'add'])->name('add');
