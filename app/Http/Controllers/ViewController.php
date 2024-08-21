@@ -268,4 +268,8 @@ class ViewController extends Controller
     {
         Auth::logout();
     }
+    public function admin_dashboard()
+    {
+        return view('admin.index');
+    }
 }
