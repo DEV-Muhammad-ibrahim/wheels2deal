@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\admin\AdminAuthController;
-use App\Http\Controllers\admin\AdminCategoryController;
-use App\Http\Controllers\admin\AdminProductController;
-use App\Http\Controllers\admin\AdminViewController;
+
+
+use App\Http\Controllers\AdminViewController;
+
 use App\Http\Controllers\ViewController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,8 +39,10 @@ Route::get('/vendor_list', [ViewController::class, 'vendor_list'])->name('vendor
 Route::get('/logout', [ViewController::class, 'logout'])->name('logout');
 
 
-
-Route::get('/admin/dashboard', [ViewController::class, 'admin_dashboard'])->name('admin_dashboard');
+Route::prefix('admin')->group(function () {
+    Route::get('/dashboard', [ViewController::class, 'admin_dashboard'])->name('admin_dashboard');
+    Route::get('/car_rental', [AdminViewController::class, 'car_rental_dashboard'])->name('car_rental_dashboard');
+});
 
 
 
