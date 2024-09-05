@@ -6,8 +6,12 @@ use Illuminate\Http\Request;
 
 class AdminViewController extends Controller
 {
-    public function car_rental_dashboard()
+    public function admin_dashboard()
     {
-        return view('admin.dashboards-car-rental');
+        return view('admin.admin-dashboard');
+    }
+    public function car_list()
+    {
+        return view('admin.admin-car-list');
     }
 }

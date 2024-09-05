@@ -40,8 +40,8 @@ Route::get('/logout', [ViewController::class, 'logout'])->name('logout');
 
 
 Route::prefix('admin')->group(function () {
-    Route::get('/dashboard', [ViewController::class, 'admin_dashboard'])->name('admin_dashboard');
-    Route::get('/car_rental', [AdminViewController::class, 'car_rental_dashboard'])->name('car_rental_dashboard');
+    Route::get('/dashboard', [AdminViewController::class, 'admin_dashboard'])->name('admin_dashboard');
+    Route::get('/cars', [AdminViewController::class, 'car_list'])->name('car_list');
 });
 
 
