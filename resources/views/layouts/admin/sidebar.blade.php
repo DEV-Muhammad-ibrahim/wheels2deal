@@ -34,7 +34,7 @@
                 <a href="javascript:;" class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center">
                         <i data-feather="monitor" stroke-width="1.5" height="18" class="me2"></i>
-                        <span>Car Rental</span>
+                        <span>Car Dealership</span>
                     </div>
                     <i class="arrow" data-feather="chevron-right" height="14"></i>
                 </a>
@@ -115,14 +115,7 @@
                 </ul>
             </li>
 
-            <li class="single-menu">
-                <a href="pages-faqs.html" class="d-flex align-items-center justify-content-between">
-                    <div class="d-flex align-items-center">
-                        <i data-feather="help-circle" stroke-width="1.5" height="18" class="me2"></i>
-                        <span>FAQs</span>
-                    </div>
-                </a>
-            </li>
+
 
 
 

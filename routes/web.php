@@ -40,7 +40,7 @@ Route::get('/logout', [ViewController::class, 'logout'])->name('logout');
 
 
 Route::prefix('admin')->group(function () {
-    Route::get('/404', [AdminViewController::class, 'not_found'])->name('404');
+    Route::get('/404', [AdminViewController::class, 'not_found'])->name('admin_404');
     Route::get('/dashboard', [AdminViewController::class, 'admin_dashboard'])->name('admin_dashboard');
     Route::get('/cars', [AdminViewController::class, 'car_list'])->name('car_list');
     Route::get('/car/details', [AdminViewController::class, 'car_details'])->name('car_details');

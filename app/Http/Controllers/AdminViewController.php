@@ -30,19 +30,19 @@ class AdminViewController extends Controller
     {
         return view('admin.admin-car-approval-details');
     }
-    public function admin_login()
+    public function login()
     {
         return view('admin.admin-authentication-sign-in');
     }
-    public function admin_singup()
+    public function signup()
     {
         return view('admin.admin-authentication-sign-up');
     }
-    public function admin_account()
+    public function account()
     {
         return view('admin.admin-account-overview');
     }
-    public function admin_settings()
+    public function settings()
     {
         return view('admin.admin-account-settings');
     }

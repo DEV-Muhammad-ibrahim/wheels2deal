@@ -8,19 +8,13 @@
                     <div class="p7 pb6">
                         <div class="d-block mb6">
                             <a href="index.html">
-                                <img src="assets/media/logo/logo-white.svg" class="height-30 mb6" alt="">
+                                <img src="{{ asset('assets/images/logo.png') }}" class="height-30 mb6" alt="">
                             </a>
                         </div>
-                        <h3 class="mb4 text-white">Welcome to the<br>Admin Dashboard.</h3>
-                        <p class="text-white-50">Qoduby is a management and data visualization software for medium
-                            <br>to high volume projects.
-                        </p>
+                        <h3 class="mb4 text-white justify-center">Welcome to the<br>Admin Dashboard.</h3>
+
                     </div>
-                    <div class="ps7 h-100">
-                        <div class="w-100 h-100 rounded-start overflow-hidden">
-                            <img src="assets/media/projects/ss.jpg" alt="">
-                        </div>
-                    </div>
+
                 </div>
             </div>
             <div class="col-lg-6">
@@ -28,9 +22,9 @@
                     <div class="w-60">
                         <div class="d-flex flex-column align-items-center justify-content-center">
                             <h5 class="mb3">Sign In</h5>
-                            <p>Start managing your project faster and better</p>
-                            <div class="d-flex mb6">
-                                <a href="#"
+                            {{-- <p>Start managing your project faster and better</p> --}}
+                            {{-- <div class="d-flex mb6"> --}}
+                            {{-- <a href="#"
                                     class="text-decoration-none d-flex align-items-center justify-content-center border rounded height-50 me2">
                                     <img src="assets/media/logos/google.svg" height="22" class="ps4 me3"
                                         alt="">
@@ -47,8 +41,8 @@
                                 <a href="#"
                                     class="text-decoration-none d-flex align-items-center justify-content-center border rounded width-50 height-50">
                                     <img src="assets/media/logos/twitter.svg" height="22" alt="">
-                                </a>
-                            </div>
+                                </a> --}}
+                            {{-- </div> --}}
                             <div class="position-relative w-100 d-flex align-items-center justify-content-center mb5">
                                 <div class="position-absolute border-bottom w-100 z-1"></div>
                                 <span class="position-relative z-2 bg-body p3">OR</span>
@@ -64,14 +58,16 @@
                                             placeholder="Password">
                                     </div>
                                     <div class="col-12 mb4 text-end">
-                                        <a href="#" class="text-primary text-decoration-none">Forgot Password?</a>
+                                        <a href="{{ Route('admin_reset_password') }}"
+                                            class="text-primary text-decoration-none">Forgot Password?</a>
                                     </div>
                                     <div class="col-12">
                                         <button class="btn btn-primary w-100">Sign In</button>
                                     </div>
                                 </div>
                             </form>
-                            <p>Don’t have account? <a href="#" class="text-decoration-none">Sign Up</a></p>
+                            <p>Don’t have account? <a href="{{ Route('admin_signup') }}"
+                                    class="text-decoration-none">Sign Up</a></p>
                         </div>
                     </div>
                 </div>

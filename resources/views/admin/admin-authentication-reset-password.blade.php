@@ -8,18 +8,14 @@
                     <div class="p7 pb6">
                         <div class="d-block mb6">
                             <a href="index.html">
-                                <img src="assets/media/logo/logo-white.svg" class="height-30 mb6" alt="">
+                                <img src="{{ asset('assets/images/logo.png') }}" class="height-30 mb6" alt="">
                             </a>
                         </div>
                         <h3 class="mb4 text-white">Fast, Easy to Use and <br>Expandable</h3>
                         <p class="text-white-50 m0">Have a flexible infrastructure with Qoduby.</p>
                         <p class="text-white-50 m0">Coming every day for easy use...</p>
                     </div>
-                    <div class="ps7 h-100">
-                        <div class="w-100 h-100 rounded-start overflow-hidden">
-                            <img src="assets/media/projects/ss.jpg" alt="">
-                        </div>
-                    </div>
+
                 </div>
             </div>
             <div class="col-lg-6">
@@ -40,7 +36,7 @@
                                         </div>
                                     </div>
                                 </form>
-                                <a href="#" class="text-decoration-none">Back to sign in</a>
+                                <a href="{{ Route('admin_login') }}" class="text-decoration-none">Back to sign in</a>
                             </div>
                         </div>
                     </div>
