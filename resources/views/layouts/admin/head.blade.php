@@ -11,10 +11,8 @@
     <meta name="keywords"
         content="qoduby, tempload, bootstrap, bootstrap 5, admin, template, dashboard, theme, admin themes, admin, templates" />
     <meta name="author" content="tempload" />
-    <title>Wheels2Deal - Admin </title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/media/logo/favicon.png" />
+    <title>{{ ucfirst(str_replace('_', ' ', Route::currentRouteName())) }} | Wheels2Deal</title>
+    <link rel="icon" href="{{ asset('assets/images/favicon.png') }}" />
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">

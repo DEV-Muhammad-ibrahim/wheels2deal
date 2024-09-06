@@ -40,8 +40,19 @@ Route::get('/logout', [ViewController::class, 'logout'])->name('logout');
 
 
 Route::prefix('admin')->group(function () {
+    Route::get('/404', [AdminViewController::class, 'not_found'])->name('404');
     Route::get('/dashboard', [AdminViewController::class, 'admin_dashboard'])->name('admin_dashboard');
     Route::get('/cars', [AdminViewController::class, 'car_list'])->name('car_list');
+    Route::get('/car/details', [AdminViewController::class, 'car_details'])->name('car_details');
+    Route::get('/car/approval', [AdminViewController::class, 'car_approval'])->name('car_approval');
+    Route::get('/car/approval/details', [AdminViewController::class, 'car_approval_details'])->name('car_approval_details');
+    Route::get('/login', [AdminViewController::class, 'login'])->name('admin_login');
+    Route::get('/signup', [AdminViewController::class, 'signup'])->name('admin_signup');
+    Route::get('/account', [AdminViewController::class, 'account'])->name('admin_account');
+    Route::get('/settings', [AdminViewController::class, 'settings'])->name('admin_settings');
+    Route::get('/chat', [AdminViewController::class, 'chat'])->name('admin_chat');
+    Route::get('/reset-password', [AdminViewController::class, 'reset_password'])->name('admin_reset_password');
+    Route::get('/new-password', [AdminViewController::class, 'new_password'])->name('admin_new_password');
 });
 
 

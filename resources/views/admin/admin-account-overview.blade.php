@@ -3,419 +3,7 @@
 <body>
     <div class="app-root d-flex flex-column">
         <!-- ***** Sidebar Start ***** -->
-        <div class="app-sidebar">
-            <!-- ***** Logo Start ***** -->
-            <div class="sidebar-logo d-flex justify-content-center">
-                <a href="index.html">
-                    <img src="assets/media/logo/logo-white.svg" height="30" alt="Qoduby">
-                </a>
-            </div>
-            <!-- ***** Logo End ***** -->
-
-            <!-- ***** Sidebar Menu Start ***** -->
-            <div class="sidebar-menu custom-scroll pt-4">
-                <!-- ***** Dashboards Menu Start ***** -->
-                <ul class="menu-group m-0 px-4 mb-4">
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="home" stroke-width="1.5" height="20" class="me2"></i>
-                                <span>Dashboards</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="index.html"><span>Default</span></a></li>
-                            <li><a href="dashboards-ecommerce.html"><span>eCommerce</span></a></li>
-                            <li><a href="dashboards-projects.html"><span>Projects</span></a></li>
-                            <li><a href="dashboards-website-analytics.html"><span>Website Analytics</span></a></li>
-                            <li><a href="dashboards-crypto.html"><span>Crypto</span></a></li>
-                            <li><a href="dashboards-car-rental.html"><span>Car Rental</span></a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- ***** Dashboards Menu End ***** -->
-
-                <!-- ***** Projects Menu Start ***** -->
-                <div class="menu-title mb-2">
-                    <small>PROJECTS</small>
-                </div>
-                <ul class="menu-group m-0 px-4 mb-4">
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="monitor" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Car Rental</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="projects-car-rental-car-list.html"><span>Car List</span></a></li>
-                            <li><a href="projects-car-rental-car-details.html"><span>Car Details</span></a></li>
-                            <li><a href="projects-car-rental-reservations.html"><span>Reservations</span></a></li>
-                            <li><a href="projects-car-rental-reservation-details.html"><span>Reservation
-                                        Details</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="shopping-cart" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>eCommerce</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="projects-ecommerce-categories.html"><span>Categories</span></a></li>
-                            <li><a href="projects-ecommerce-add-category.html"><span>Add Category</span></a></li>
-                            <li><a href="projects-ecommerce-products.html"><span>Products</span></a></li>
-                            <li><a href="projects-ecommerce-add-product.html"><span>Add Product</span></a></li>
-                            <li><a href="projects-ecommerce-order-list.html"><span>Order List</span></a></li>
-                            <li><a href="projects-ecommerce-order-details.html"><span>Order Details</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="layout" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Blog</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="projects-blog-categories.html"><span>Categories</span></a></li>
-                            <li><a href="projects-blog-blog-list.html"><span>Blog List</span></a></li>
-                            <li><a href="projects-blog-add-blog.html"><span>Add Blog</span></a></li>
-                            <li><a href="projects-blog-comments.html"><span>Comments</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="code" stroke-width="1.5" height="16" class="me2"></i>
-                                <span>API Key Manager</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="projects-api-key-manager-api-list.html"><span>API List</span></a></li>
-                            <li><a href="projects-api-key-manager-languages.html"><span>Languages</span></a></li>
-                            <li><a href="projects-api-key-manager-language-details.html"><span>Language
-                                        Details</span></a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- ***** Projects Menu End ***** -->
-
-                <!-- ***** Apps Menu Start ***** -->
-                <div class="menu-title mb-2">
-                    <small>APPS</small>
-                </div>
-                <ul class="menu-group m-0 px-4 mb-4">
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="calendar" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Calendar</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="apps-calendar-calendar-1.html"><span>Calendar 1</span></a></li>
-                            <li><a href="apps-calendar-calendar-2.html"><span>Calendar 2</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="message-circle" stroke-width="1.5" height="18"
-                                    class="me2"></i>
-                                <span>Chat</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="apps-chat-single-chat.html"><span>Single Chat</span></a></li>
-                            <li><a href="apps-chat-group-chat.html"><span>Group Chat</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="mail" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Inbox</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="apps-inbox-mailbox.html"><span>Mailbox</span></a></li>
-                            <li><a href="apps-inbox-compose.html"><span>Compose</span></a></li>
-                            <li><a href="apps-inbox-view-reply.html"><span>View & Reply</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="phone" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Contacts</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="apps-contacts-contact-list.html"><span>Contact List</span></a></li>
-                            <li><a href="apps-contacts-add-contact.html"><span>Add Contact</span></a></li>
-                            <li><a href="apps-contacts-view-contact.html"><span>View Contact</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="database" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Projects</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="apps-projects-project-list.html"><span>Project List</span></a></li>
-                            <li><a href="apps-projects-add-project.html"><span>Add Project</span></a></li>
-                            <li><a href="apps-projects-project-overview.html"><span>Project Overview</span></a></li>
-                            <li><a href="apps-projects-users.html"><span>Users</span></a></li>
-                            <li><a href="apps-projects-files.html"><span>Files</span></a></li>
-                            <li><a href="apps-projects-activity.html"><span>Activity</span></a></li>
-                            <li><a href="apps-projects-settings.html"><span>Settings</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="check-circle" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Tasks</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="apps-tasks-overview.html"><span>Overview</span></a></li>
-                            <li><a href="apps-tasks-add-task.html"><span>Add Task</span></a></li>
-                            <li><a href="apps-tasks-task-detail.html"><span>Task Detail</span></a></li>
-                            <li><a href="apps-tasks-users.html"><span>Users</span></a></li>
-                            <li><a href="apps-tasks-files.html"><span>Files</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="single-menu">
-                        <a href="apps-kanban-kanban-board.html"
-                            class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="columns" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Kanban Board</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="pie-chart" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>CRM</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="apps-crm-contact.html"><span>Contact</span></a></li>
-                            <li><a href="apps-crm-company.html"><span>Company</span></a></li>
-                            <li><a href="apps-crm-deals.html"><span>Deals</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="file" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Invoice Manager</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="apps-invoice-manager-invoice-list.html"><span>Invoice List</span></a></li>
-                            <li><a href="apps-invoice-manager-new-invoice.html"><span>New Invoice</span></a></li>
-                            <li><a href="apps-invoice-manager-invoice-details.html"><span>Invoice Details</span></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="headphones" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Support Center</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="apps-support-center-overview.html"><span>Overview</span></a></li>
-                            <li><a href="apps-support-center-ticket-details.html"><span>Ticket Details</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="folder" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>File Manager</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="apps-file-manager-files.html"><span>Files</span></a></li>
-                            <li><a href="apps-file-manager-blank-directory.html"><span>Blank Directory</span></a></li>
-                            <li><a href="apps-file-manager-setting.html"><span>Settings</span></a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- ***** Apps Menu End ***** -->
-
-                <!-- ***** Pages Menu Start ***** -->
-                <div class="menu-title mb-2">
-                    <small>PAGES</small>
-                </div>
-                <ul class="menu-group m-0 px-4 mb-4">
-                    <li class="sub-menu active">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="user" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Account & User</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li class="active"><a href="pages-account-user-overview.html"><span>Overview</span></a>
-                            </li>
-                            <li><a href="pages-account-user-settings.html"><span>Settings</span></a></li>
-                            <li><a href="pages-account-user-security.html"><span>Security</span></a></li>
-                            <li><a href="pages-account-user-activity.html"><span>Activity</span></a></li>
-                            <li><a href="pages-account-user-billing.html"><span>Billing</span></a></li>
-                            <li><a href="pages-account-user-statements.html"><span>Statements</span></a></li>
-                            <li><a href="pages-account-user-referrals.html"><span>Referrals</span></a></li>
-                            <li><a href="pages-account-user-project.html"><span>Project</span></a></li>
-                            <li><a href="pages-account-user-documents.html"><span>Documents</span></a></li>
-                            <li><a href="pages-account-user-followers.html"><span>Followers</span></a></li>
-                            <li><a href="pages-account-user-api-keys.html"><span>API Keys</span></a></li>
-                            <li><a href="pages-account-user-logs.html"><span>Logs</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="key" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Authentication</span>
-                            </div>
-                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                        </a>
-                        <ul class="sub-menu-group">
-                            <li><a href="pages-authentication-sign-in.html"><span>Sign-in</span></a></li>
-                            <li><a href="pages-authentication-sign-up.html"><span>Sign-up</span></a></li>
-                            <li><a href="pages-authentication-reset-password.html"><span>Reset Password</span></a></li>
-                            <li><a href="pages-authentication-new-password.html"><span>New Password</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="single-menu">
-                        <a href="pages-timeline.html" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="clock" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Timeline</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="single-menu">
-                        <a href="pages-faqs.html" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="help-circle" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>FAQs</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="single-menu">
-                        <a href="pages-pricing.html" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="dollar-sign" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Pricing</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="single-menu">
-                        <a href="pages-gallery.html" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="camera" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Gallery</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="single-menu">
-                        <a href="pages-search-result.html" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="search" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Search Result</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="single-menu">
-                        <a href="pages-coming-soon.html" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="watch" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Coming Soon</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="single-menu">
-                        <a href="pages-404-error.html" class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="alert-circle" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>404 Error</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <!-- ***** Pages Menu End ***** -->
-
-                <!-- ***** Help Menu Start ***** -->
-                <div class="menu-title mb-2">
-                    <small>HELP</small>
-                </div>
-                <ul class="menu-group m-0 px-4 pb-1 mb-3">
-                    <li class="single-menu">
-                        <a target="_blank" href="http://qoduby.tempload.com/documentation/components.html"
-                            class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="book" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Components</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="single-menu">
-                        <a target="_blank" href="http://qoduby.tempload.com/documentation/index.html"
-                            class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="file" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Documentation</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="single-menu">
-                        <a target="_blank" href="http://qoduby.tempload.com/documentation/changelog.html"
-                            class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i data-feather="terminal" stroke-width="1.5" height="18" class="me2"></i>
-                                <span>Changelog</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <!-- ***** Help Menu End ***** -->
-            </div>
-            <!-- ***** Sidebar Menu End ***** -->
-
-            <!-- ***** Sidebar Footer Start ***** -->
-            <div class="sidebar-footer d-flex align-items-center justify-content-center">
-                <a href="http://qoduby.tempload.com/documentation/index.html" class="sidebar-footer-button">Docs &
-                    Components</a>
-            </div>
-            <!-- ***** Sidebar Footer End ***** -->
-        </div>
+        @include('layouts.admin.sidebar')
         <!-- ***** Sidebar End ***** -->
 
         <!-- ***** Responsive Menu Backdrop Start ***** -->
@@ -431,644 +19,7 @@
                 <!-- ***** Sidebar Menu Open Button End ***** -->
 
                 <!-- ***** Navbar Start ***** -->
-                <nav class="top-nav">
-                    <ul class="menu-group">
-                        <!-- ***** Dashboards Menu Start ***** -->
-                        <li class="sub-menu open-mega-menu">
-                            <a class="menu-link" href="javascript:;">
-                                Dashboards
-                                <i class="arrow" data-feather="chevron-down" width="14"></i>
-                            </a>
-                            <div class="mega-menu-wrapper">
-                                <div class="mega-menu">
-                                    <div class="container-fluid">
-                                        <div class="row g-0 align-items-center">
-                                            <div class="col-lg-7 mb-sm-1">
-                                                <div class="cover">
-                                                    <img src="assets/media/menu/1.jpg" class="img-fluid w-100"
-                                                        alt="">
-                                                    <div
-                                                        class="text p-3 d-flex align-items-center justify-content-center">
-                                                        <div class="text-center">
-                                                            <h6 class="text-white mb-1">Want to see an overview?</h6>
-                                                            <p class="text-white mb-4">See all the pages at once.</p>
-                                                            <a href="#" class="btn btn-success">View All
-                                                                Pages</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-5">
-                                                <div class="menu-content ps6 sm-p-0">
-                                                    <strong class="text-heading d-block mb-2">DASHBOARDS</strong>
-                                                    <ul class="mega-sub-menu">
-                                                        <li><a class="hover-primary" href="index.html">Default</a>
-                                                        </li>
-                                                        <li><a class="hover-primary"
-                                                                href="dashboards-ecommerce.html">eCommerce</a></li>
-                                                        <li><a class="hover-primary"
-                                                                href="dashboards-projects.html">Projects</a></li>
-                                                        <li><a class="hover-primary"
-                                                                href="dashboards-website-analytics.html">Website
-                                                                Analytics</a></li>
-                                                        <li><a class="hover-primary"
-                                                                href="dashboards-crypto.html">Crypto</a></li>
-                                                        <li><a class="hover-primary"
-                                                                href="dashboards-car-rental.html">Car Rental</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- ***** Dashboards Menu End ***** -->
-
-                        <!-- ***** Projects Menu Start ***** -->
-                        <li class="sub-menu open-mega-menu">
-                            <a class="menu-link" href="javascript:;">
-                                Projects
-                                <i class="arrow" data-feather="chevron-down" width="14"></i>
-                            </a>
-                            <div class="mega-menu-wrapper large-menu">
-                                <div class="mega-menu">
-                                    <div class="container-fluid">
-                                        <div class="row g-0">
-                                            <div class="col-lg-12">
-                                                <div class="menu-content">
-                                                    <div class="row">
-                                                        <div class="col-sm-3 mb-sm-1">
-                                                            <strong
-                                                                class="text-heading d-block mb-2">E-COMMERCE</strong>
-                                                            <ul class="mega-sub-menu">
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-ecommerce-categories.html">Categories</a>
-                                                                </li>
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-ecommerce-add-category.html">Add
-                                                                        Category</a></li>
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-ecommerce-products.html">Products</a>
-                                                                </li>
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-ecommerce-add-product.html">Add
-                                                                        Product</a></li>
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-ecommerce-order-list.html">Order
-                                                                        List</a></li>
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-ecommerce-order-details.html">Order
-                                                                        Details</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-sm-3 mb-sm-1">
-                                                            <strong class="text-heading d-block mb-2">BLOG &
-                                                                CMS</strong>
-                                                            <ul class="mega-sub-menu">
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-blog-categories.html">Categories</a>
-                                                                </li>
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-blog-blog-list.html">Blog
-                                                                        List</a></li>
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-blog-add-blog.html">Add Blog</a>
-                                                                </li>
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-blog-comments.html">Comments</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-sm-3 mb-sm-1">
-                                                            <strong class="text-heading d-block mb-2">CAR
-                                                                RENTAL</strong>
-                                                            <ul class="mega-sub-menu">
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-car-rental-car-list.html">Car
-                                                                        List</a></li>
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-car-rental-car-details.html">Car
-                                                                        Details</a></li>
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-car-rental-reservations.html">Reservations</a>
-                                                                </li>
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-car-rental-reservation-details.html">Reservation
-                                                                        Details</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <strong class="text-heading d-block mb-2">API KEY
-                                                                MANAGER</strong>
-                                                            <ul class="mega-sub-menu">
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-api-key-manager-api-list.html">API
-                                                                        List</a></li>
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-api-key-manager-languages.html">Languages</a>
-                                                                </li>
-                                                                <li><a class="hover-primary"
-                                                                        href="projects-api-key-manager-language-details.html">Language
-                                                                        Details</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- ***** Projects Menu End ***** -->
-
-                        <!-- ***** Apps Menu Start ***** -->
-                        <li class="sub-menu open-sub-menu">
-                            <a class="menu-link" href="javascript:;">
-                                Apps
-                                <i class="arrow" data-feather="chevron-down" width="14"></i>
-                            </a>
-                            <div class="top-menu-group-wrapper">
-                                <ul class="top-menu-group">
-                                    <li class="top-sub-menu">
-                                        <a href="javascript:;"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="calendar" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Calendar</span>
-                                            </div>
-                                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                                        </a>
-                                        <div class="top-level-menu-wrapper">
-                                            <ul class="top-sub-menu-group">
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-calendar-calendar-1.html"><span>Calendar
-                                                            1</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-calendar-calendar-2.html"><span>Calendar
-                                                            2</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="top-sub-menu">
-                                        <a href="javascript:;"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="message-circle" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Chat</span>
-                                            </div>
-                                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                                        </a>
-                                        <div class="top-level-menu-wrapper">
-                                            <ul class="top-sub-menu-group">
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-chat-single-chat.html"><span>Single Chat</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-chat-group-chat.html"><span>Group Chat</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="top-sub-menu">
-                                        <a href="javascript:;"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="mail" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Inbox</span>
-                                            </div>
-                                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                                        </a>
-                                        <div class="top-level-menu-wrapper">
-                                            <ul class="top-sub-menu-group">
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-inbox-mailbox.html"><span>Mailbox</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-inbox-compose.html"><span>Compose</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-inbox-view-reply.html"><span>View & Reply</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="top-sub-menu">
-                                        <a href="javascript:;"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="phone" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Contacts</span>
-                                            </div>
-                                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                                        </a>
-                                        <div class="top-level-menu-wrapper">
-                                            <ul class="top-sub-menu-group">
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-contacts-contact-list.html"><span>Contact
-                                                            List</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-contacts-add-contact.html"><span>Add
-                                                            Contact</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-contacts-view-contact.html"><span>View
-                                                            Contact</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="top-sub-menu">
-                                        <a href="javascript:;"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="database" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Projects</span>
-                                            </div>
-                                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                                        </a>
-                                        <div class="top-level-menu-wrapper">
-                                            <ul class="top-sub-menu-group">
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-projects-project-list.html"><span>Project
-                                                            List</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-projects-add-project.html"><span>Add
-                                                            Project</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-projects-project-overview.html"><span>Project
-                                                            Overview</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-projects-users.html"><span>Users</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-projects-files.html"><span>Files</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-projects-activity.html"><span>Activity</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-projects-settings.html"><span>Settings</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="top-sub-menu">
-                                        <a href="javascript:;"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="check-circle" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Tasks</span>
-                                            </div>
-                                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                                        </a>
-                                        <div class="top-level-menu-wrapper">
-                                            <ul class="top-sub-menu-group">
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-tasks-overview.html"><span>Overview</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-tasks-add-task.html"><span>Add Task</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-tasks-task-detail.html"><span>Task Detail</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-tasks-users.html"><span>Users</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-tasks-files.html"><span>Files</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="apps-kanban-kanban-board.html"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="columns" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Kanban Board</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="top-sub-menu">
-                                        <a href="javascript:;"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="pie-chart" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>CRM</span>
-                                            </div>
-                                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                                        </a>
-                                        <div class="top-level-menu-wrapper">
-                                            <ul class="top-sub-menu-group">
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-crm-contact.html"><span>Contact</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-crm-company.html"><span>Company</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-crm-deals.html"><span>Deals</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="top-sub-menu">
-                                        <a href="javascript:;"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="file" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Invoice Manager</span>
-                                            </div>
-                                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                                        </a>
-                                        <div class="top-level-menu-wrapper">
-                                            <ul class="top-sub-menu-group">
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-invoice-manager-invoice-list.html"><span>Invoice
-                                                            List</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-invoice-manager-new-invoice.html"><span>New
-                                                            Invoice</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-invoice-manager-invoice-details.html"><span>Invoice
-                                                            Details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="top-sub-menu">
-                                        <a href="javascript:;"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="headphones" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Support Center</span>
-                                            </div>
-                                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                                        </a>
-                                        <div class="top-level-menu-wrapper">
-                                            <ul class="top-sub-menu-group">
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-support-center-overview.html"><span>Overview</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-support-center-ticket-details.html"><span>Ticket
-                                                            Details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="top-sub-menu">
-                                        <a href="javascript:;"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="folder" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>File Manager</span>
-                                            </div>
-                                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                                        </a>
-                                        <div class="top-level-menu-wrapper">
-                                            <ul class="top-sub-menu-group">
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-file-manager-files.html"><span>Files</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-file-manager-blank-directory.html"><span>Blank
-                                                            Directory</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="apps-file-manager-setting.html"><span>Settings</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- ***** Apps Menu End ***** -->
-
-                        <!-- ***** Pages Menu Start ***** -->
-                        <li class="sub-menu open-sub-menu">
-                            <a class="menu-link" href="javascript:;">
-                                Pages
-                                <i class="arrow" data-feather="chevron-down" width="14"></i>
-                            </a>
-                            <div class="top-menu-group-wrapper">
-                                <ul class="top-menu-group">
-                                    <li class="top-sub-menu">
-                                        <a href="javascript:;"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="user" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Account & User</span>
-                                            </div>
-                                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                                        </a>
-                                        <div class="top-level-menu-wrapper">
-                                            <ul class="top-sub-menu-group">
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-account-user-overview.html"><span>Overview</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-account-user-settings.html"><span>Settings</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-account-user-security.html"><span>Security</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-account-user-activity.html"><span>Activity</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-account-user-billing.html"><span>Billing</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-account-user-statements.html"><span>Statements</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-account-user-referrals.html"><span>Referrals</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-account-user-project.html"><span>Project</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-account-user-documents.html"><span>Documents</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-account-user-followers.html"><span>Followers</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-account-user-api-keys.html"><span>API
-                                                            Keys</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-account-user-logs.html"><span>Logs</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="top-sub-menu">
-                                        <a href="javascript:;"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="key" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Authentication</span>
-                                            </div>
-                                            <i class="arrow" data-feather="chevron-right" height="14"></i>
-                                        </a>
-                                        <div class="top-level-menu-wrapper">
-                                            <ul class="top-sub-menu-group">
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-authentication-sign-in.html"><span>Sign-in</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-authentication-sign-up.html"><span>Sign-up</span></a>
-                                                </li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-authentication-reset-password.html"><span>Reset
-                                                            Password</span></a></li>
-                                                <li><a class="d-flex align-items-center justify-content-between"
-                                                        href="pages-authentication-new-password.html"><span>New
-                                                            Password</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="pages-timeline.html"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="clock" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Timeline</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-faqs.html"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="help-circle" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>FAQs</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-pricing.html"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="dollar-sign" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Pricing</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-gallery.html"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="camera" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Gallery</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-search-result.html"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="search" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Search Result</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-coming-soon.html"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="watch" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>Coming Soon</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-404-error.html"
-                                            class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i data-feather="alert-circle" stroke-width="1.5" height="18"
-                                                    class="me2"></i>
-                                                <span>404 Error</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- ***** Pages Menu End ***** -->
-
-                        <!-- ***** Help Menu Start ***** -->
-                        <li class="sub-menu open-mega-menu">
-                            <a class="menu-link" href="javascript:;">
-                                Help
-                                <i class="arrow" data-feather="chevron-down" width="14"></i>
-                            </a>
-                            <div class="mega-menu-wrapper small-menu">
-                                <div class="mega-menu">
-                                    <div class="container-fluid">
-                                        <div class="row g-0 align-items-center">
-                                            <div class="col-lg-6 mb-sm-1">
-                                                <div class="menu-content">
-                                                    <ul class="mega-sub-menu">
-                                                        <li class="mb-3">
-                                                            <a href="http://qoduby.tempload.com/documentation/components.html"
-                                                                class="d-flex align-items-center justify-content-between">
-                                                                <div class="d-flex align-items-center">
-                                                                    <i data-feather="book" stroke-width="1.5"
-                                                                        height="18" class="me2"></i>
-                                                                    <span>Components</span>
-                                                                </div>
-                                                            </a>
-                                                        </li>
-                                                        <li class="mb-3">
-                                                            <a href="http://qoduby.tempload.com/documentation/index.html"
-                                                                class="d-flex align-items-center justify-content-between">
-                                                                <div class="d-flex align-items-center">
-                                                                    <i data-feather="file" stroke-width="1.5"
-                                                                        height="18" class="me2"></i>
-                                                                    <span>Documentation</span>
-                                                                </div>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="http://qoduby.tempload.com/documentation/changelog.html"
-                                                                class="d-flex align-items-center justify-content-between">
-                                                                <div class="d-flex align-items-center">
-                                                                    <i data-feather="terminal" stroke-width="1.5"
-                                                                        height="18" class="me2"></i>
-                                                                    <span>Changelog</span>
-                                                                </div>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="cover">
-                                                    <img src="assets/media/menu/3.jpg" class="img-fluid w-100"
-                                                        alt="">
-                                                    <div
-                                                        class="text p-3 d-flex align-items-center justify-content-center">
-                                                        <div class="text-center">
-                                                            <p class="text-white mb-0">Do you need help?</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- ***** Help Menu End ***** -->
-                    </ul>
-                </nav>
+                @include('layouts.admin.navbar')
                 <!-- ***** Navbar End ***** -->
 
                 <div class="header-tools d-flex align-items-center">
@@ -1109,8 +60,7 @@
                                     class="d-flex flex-column justify-content-center align-items-center text-decoration-none text-body">
                                     <div
                                         class="rounded-circle width-50 height-50 bg-info-subtle d-flex align-items-center justify-content-center mb2">
-                                        <i data-feather="folder" stroke-width="2" height="36"
-                                            class="text-info"></i>
+                                        <i data-feather="folder" stroke-width="2" height="36" class="text-info"></i>
                                     </div>
                                     <span>Files</span>
                                 </a>
@@ -1118,8 +68,7 @@
                                     class="d-flex flex-column justify-content-center align-items-center text-decoration-none text-body">
                                     <div
                                         class="rounded-circle width-50 height-50 bg-success-subtle d-flex align-items-center justify-content-center mb2">
-                                        <i data-feather="mail" stroke-width="2" height="36"
-                                            class="text-success"></i>
+                                        <i data-feather="mail" stroke-width="2" height="36" class="text-success"></i>
                                     </div>
                                     <span>Inbox</span>
                                 </a>
@@ -1205,57 +154,49 @@
                                         <span class="me3 text-body">Calendar</span>
                                         <span class="text-heading">"birthday"</span>
                                     </a>
-                                    <a href="#"
-                                        class="d-flex align-items-center pt2 pb2 text-decoration-none">
+                                    <a href="#" class="d-flex align-items-center pt2 pb2 text-decoration-none">
                                         <i data-feather="message-circle" stroke-width="2" height="20"
                                             class="text-body-tertiary me3"></i>
                                         <span class="me3 text-body">Chat</span>
                                         <span class="text-heading">"october invoice"</span>
                                     </a>
-                                    <a href="#"
-                                        class="d-flex align-items-center pt2 pb2 text-decoration-none">
+                                    <a href="#" class="d-flex align-items-center pt2 pb2 text-decoration-none">
                                         <i data-feather="mail" stroke-width="2" height="20"
                                             class="text-body-tertiary me3"></i>
                                         <span class="me3 text-body">Inbox</span>
                                         <span class="text-heading">"project files"</span>
                                     </a>
-                                    <a href="#"
-                                        class="d-flex align-items-center pt2 pb2 text-decoration-none">
+                                    <a href="#" class="d-flex align-items-center pt2 pb2 text-decoration-none">
                                         <i data-feather="phone" stroke-width="2" height="20"
                                             class="text-body-tertiary me3"></i>
                                         <span class="me3 text-body">Contacts</span>
                                         <span class="text-heading">"justin case"</span>
                                     </a>
-                                    <a href="#"
-                                        class="d-flex align-items-center pt2 pb2 text-decoration-none">
+                                    <a href="#" class="d-flex align-items-center pt2 pb2 text-decoration-none">
                                         <i data-feather="database" stroke-width="2" height="20"
                                             class="text-body-tertiary me3"></i>
                                         <span class="me3 text-body">Projects</span>
                                         <span class="text-heading">"mobile app sketch file"</span>
                                     </a>
-                                    <a href="#"
-                                        class="d-flex align-items-center pt2 pb2 text-decoration-none">
+                                    <a href="#" class="d-flex align-items-center pt2 pb2 text-decoration-none">
                                         <i data-feather="check-circle" stroke-width="2" height="20"
                                             class="text-body-tertiary me3"></i>
                                         <span class="me3 text-body">Tasks</span>
                                         <span class="text-heading">"seo report"</span>
                                     </a>
-                                    <a href="#"
-                                        class="d-flex align-items-center pt2 pb2 text-decoration-none">
+                                    <a href="#" class="d-flex align-items-center pt2 pb2 text-decoration-none">
                                         <i data-feather="columns" stroke-width="2" height="20"
                                             class="text-body-tertiary me3"></i>
                                         <span class="me3 text-body">Kanban Board</span>
                                         <span class="text-heading">"design assets"</span>
                                     </a>
-                                    <a href="#"
-                                        class="d-flex align-items-center pt2 pb2 text-decoration-none">
+                                    <a href="#" class="d-flex align-items-center pt2 pb2 text-decoration-none">
                                         <i data-feather="check" stroke-width="2" height="20"
                                             class="text-body-tertiary me3"></i>
                                         <span class="me3 text-body">ToDo</span>
                                         <span class="text-heading">"shopping list"</span>
                                     </a>
-                                    <a href="#"
-                                        class="d-flex align-items-center pt2 pb2 text-decoration-none">
+                                    <a href="#" class="d-flex align-items-center pt2 pb2 text-decoration-none">
                                         <i data-feather="pie-chart" stroke-width="2" height="20"
                                             class="text-body-tertiary me3"></i>
                                         <span class="me3 text-body">CRM</span>
@@ -1327,8 +268,8 @@
                                                 <a class="dropdown-item d-flex align-items-center justify-content-between"
                                                     href="#">
                                                     <div class="d-flex align-items-center">
-                                                        <i data-feather="trash-2" stroke-width="1.5"
-                                                            height="16" class="text-body me1"></i>
+                                                        <i data-feather="trash-2" stroke-width="1.5" height="16"
+                                                            class="text-body me1"></i>
                                                         Delete
                                                     </div>
                                                     <i data-feather="info" stroke-width="2" height="12"
@@ -1341,8 +282,7 @@
                                     </div>
                                     <button type="button" class="border-0 bg-transparent p0 outline-none"
                                         data-bs-dismiss="offcanvas" aria-label="Close">
-                                        <i data-feather="x" stroke-width="2" height="22"
-                                            class="text-body"></i>
+                                        <i data-feather="x" stroke-width="2" height="22" class="text-body"></i>
                                     </button>
                                 </div>
                             </div>
@@ -1459,8 +399,7 @@
                         <a href="javascript:;"
                             class="dropdown-toggle header-dropdown bg-secondary-subtle rounded d-flex align-items-center justify-content-center overflow-auto outline-none"
                             data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i data-feather="hard-drive" stroke-width="2" height="22"
-                                class="text-secondary"></i>
+                            <i data-feather="hard-drive" stroke-width="2" height="22" class="text-secondary"></i>
                         </a>
                         <!-- ***** Icon End ***** -->
 
@@ -1523,8 +462,8 @@
                                         <div class="col-4 mb5">
                                             <a href="#"
                                                 class="d-flex justify-content-center align-items-center flex-column border p5 text-decoration-none rounded border-dashed hover-light">
-                                                <img class="mb-2" src="assets/media/logos/slack.svg"
-                                                    height="30" alt="">
+                                                <img class="mb-2" src="assets/media/logos/slack.svg" height="30"
+                                                    alt="">
                                                 <span class="text-heading">Slack</span>
                                             </a>
                                         </div>
@@ -1547,8 +486,8 @@
                                         <div class="col-4 mb5">
                                             <a href="#"
                                                 class="d-flex justify-content-center align-items-center flex-column border p5 text-decoration-none rounded border-dashed hover-light">
-                                                <img class="mb-2" src="assets/media/logos/figma.svg"
-                                                    height="30" alt="">
+                                                <img class="mb-2" src="assets/media/logos/figma.svg" height="30"
+                                                    alt="">
                                                 <span class="text-heading">Figma</span>
                                             </a>
                                         </div>
@@ -1633,8 +572,7 @@
                                 <hr class="opacity-20 border-dashed">
                                 <a href="#" class="d-flex justify-content-start text-decoration-none">
                                     <div class="img-fix width-40 height-40 rounded-circle me3">
-                                        <img class="rounded-circle" src="assets/media/avatars/8.jpg"
-                                            alt="">
+                                        <img class="rounded-circle" src="assets/media/avatars/8.jpg" alt="">
                                     </div>
                                     <div class="d-flex flex-column align-items-start">
                                         <strong class="text-heading me1">New message received 👋🏻</strong>
@@ -1643,8 +581,8 @@
                                     </div>
                                 </a>
                                 <hr class="opacity-20 border-dashed">
-                                <a class="btn btn-primary btn-soft btn-sm d-block" href="#"
-                                    role="button">Read All Notifications</a>
+                                <a class="btn btn-primary btn-soft btn-sm d-block" href="#" role="button">Read
+                                    All Notifications</a>
                             </div>
                             <!-- ***** Content End ***** -->
                         </div>
@@ -1838,8 +776,8 @@
                                                         <div class="dropdown d-inline">
                                                             <button type="button"
                                                                 class="btn p1 btn-light dropdown-toggle arrow-none"
-                                                                data-bs-auto-close="outside"
-                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                data-bs-auto-close="outside" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
                                                                 <i data-feather="more-horizontal" stroke-width="2"
                                                                     width="20" class="text-body ms1"></i>
                                                             </button>
@@ -1878,8 +816,8 @@
                                                     <small class="d-block mb5">@BarryTone</small>
                                                     <div class="row">
                                                         <div class="col-lg-4">
-                                                            <i data-feather="map-pin" stroke-width="2"
-                                                                width="14" class="text-heading me1"></i>
+                                                            <i data-feather="map-pin" stroke-width="2" width="14"
+                                                                class="text-heading me1"></i>
                                                             <span>Florida, United States</span>
                                                         </div>
                                                         <div class="col-lg-8">
@@ -1891,8 +829,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-xxl-4 text-end">
-                                                    <div
-                                                        class="d-flex align-items-center justify-content-between mb2">
+                                                    <div class="d-flex align-items-center justify-content-between mb2">
                                                         <span>Complete Your Profile</span>
                                                         <span>60%</span>
                                                     </div>
@@ -2029,18 +966,16 @@
                                                 class="badge badge-soft text-bg-primary me3 mb2">React</span></a>
                                         <a href="#"><span
                                                 class="badge badge-soft text-bg-primary me3 mb2">Vue.js</span></a>
-                                        <a href="#"><span
-                                                class="badge badge-soft text-bg-primary me3 mb2">React
+                                        <a href="#"><span class="badge badge-soft text-bg-primary me3 mb2">React
                                                 Native</span></a>
                                         <a href="#"><span class="badge badge-soft text-bg-primary me3 mb2">GO
                                                 Lang</span></a>
                                         <a href="#"><span class="badge badge-soft text-bg-primary me3 mb2">OOP
                                                 Programming</span></a>
-                                        <a href="#"><span
-                                                class="badge badge-soft text-bg-primary me3 mb2">UI/UX
+                                        <a href="#"><span class="badge badge-soft text-bg-primary me3 mb2">UI/UX
                                                 Design</span></a>
-                                        <a href="#"><span
-                                                class="badge badge-soft text-bg-primary me3 mb2">Basic SEO</span></a>
+                                        <a href="#"><span class="badge badge-soft text-bg-primary me3 mb2">Basic
+                                                SEO</span></a>
                                         <a href="#"><span
                                                 class="badge badge-soft text-bg-primary me3 mb2">Responsive
                                                 Design</span></a>
