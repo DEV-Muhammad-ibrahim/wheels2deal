@@ -266,7 +266,12 @@ class ViewController extends Controller
     }
     public function logout()
     {
-        Auth::logout();
+        $view = 'login';
+        if (view()->exists($view)) {
+            return view($view);
+        } else {
+            return view('404');
+        }
     }
     public function admin_dashboard()
     {
