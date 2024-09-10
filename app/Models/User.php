@@ -20,7 +20,20 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'google_id',
+        'verified',
+        'verification_code',
+        'vendor_name',
+        'profile_picture',
+        'description',
+        'location',
+        'website',
+        'role',
+
     ];
+
+
+
 
     /**
      * The attributes that should be hidden for serialization.

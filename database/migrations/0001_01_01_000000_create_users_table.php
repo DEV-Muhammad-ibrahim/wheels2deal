@@ -16,7 +16,16 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password')->nullable();
+            $table->string('google_id')->nullable();
+            $table->boolean('verified')->default(false);
+            $table->string('verification_code')->nullable();
+            $table->string('vendor_name')->unique()->nullable();
+            $table->string('profile_picture')->nullable();
+            $table->string('description')->nullable();
+            $table->string('location')->unique()->nullable();
+            $table->string('website')->nullable();
+            $table->enum('role', ['user', 'vendor', 'admin'])->default('user');
             $table->rememberToken();
             $table->timestamps();
         });
@@ -24,12 +33,12 @@ return new class extends Migration
         Schema::create('password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();
             $table->string('token');
-            $table->timestamp('created_at')->nullable();
+            $table->timestamp('created_at')->nullable()->index(); // Indexed for performance
         });
 
         Schema::create('sessions', function (Blueprint $table) {
             $table->string('id')->primary();
-            $table->foreignId('user_id')->nullable()->index();
+            $table->foreignId('user_id')->nullable()->constrained()->onDelete('cascade'); // Ensures user integrity
             $table->string('ip_address', 45)->nullable();
             $table->text('user_agent')->nullable();
             $table->longText('payload');

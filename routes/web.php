@@ -38,7 +38,6 @@ Route::get('/vendor_grid', [ViewController::class, 'vendor_grid'])->name('vendor
 Route::get('/vendor_list', [ViewController::class, 'vendor_list'])->name('vendor_list');
 Route::get('/logout', [ViewController::class, 'logout'])->name('logout');
 
-
 Route::prefix('admin')->group(function () {
     Route::get('/404', [AdminViewController::class, 'not_found'])->name('admin_404');
     Route::get('/dashboard', [AdminViewController::class, 'admin_dashboard'])->name('admin_dashboard');
