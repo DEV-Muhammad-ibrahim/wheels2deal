@@ -3,7 +3,7 @@
 
 
 use App\Http\Controllers\AdminViewController;
-
+use App\Http\Controllers\RolePermissionController;
 use App\Http\Controllers\ViewController;
 use Illuminate\Support\Facades\Route;
 
@@ -55,7 +55,8 @@ Route::prefix('admin')->group(function () {
 });
 
 
-
+Route::get('/asign', [RolePermissionController::class, 'assignRoleToUser']);
+Route::get('/asign2', [RolePermissionController::class, 'assignPermissionToRole']);
 
 
 

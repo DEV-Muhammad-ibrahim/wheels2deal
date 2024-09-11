@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->string('location')->unique()->nullable();
             $table->string('website')->nullable();
-            $table->enum('role', ['user', 'vendor', 'admin'])->default('user');
+            $table->foreignId('role_id')->constrained()->onDelete('cascade');
             $table->rememberToken();
             $table->timestamps();
         });

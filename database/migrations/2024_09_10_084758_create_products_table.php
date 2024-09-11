@@ -17,7 +17,7 @@ return new class extends Migration
             $table->enum('type', ['cars', 'accessories']);
             $table->string('model');
             $table->string('company');
-            $table->boolean('status')->default(false);
+            $table->enum('status', ['active', 'inactive']);
             $table->string('price');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
