@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->enum('type', ['cars', 'accessories']);
+            $table->enum('type', ['cars', 'accessories'])->default('cars');
             $table->string('model');
             $table->string('company');
-            $table->enum('status', ['active', 'inactive']);
+            $table->enum('status', ['active', 'inactive'])->default('inactive');
             $table->string('price');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();

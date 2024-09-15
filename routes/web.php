@@ -55,8 +55,7 @@ Route::prefix('admin')->group(function () {
 });
 
 
-Route::get('/asign', [RolePermissionController::class, 'assignRoleToUser']);
-Route::get('/asign2', [RolePermissionController::class, 'assignPermissionToRole']);
+
 
 
 

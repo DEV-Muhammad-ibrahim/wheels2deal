@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
@@ -25,7 +26,8 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->string('location')->unique()->nullable();
             $table->string('website')->nullable();
-            $table->foreignId('role_id')->constrained()->onDelete('cascade');
+            $table->enum('role', ['user', 'admin', 'vendor']);
+            $table->boolean('user_can_add_products')->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

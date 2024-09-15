@@ -31,12 +31,11 @@ class User extends Authenticatable
         'role',
 
     ];
-    public function role()
+
+    public function products()
     {
-        return $this->belongsTo(Role::class);
+        return $this->hasMany(Product::class);
     }
-
-
 
 
     /**
