@@ -23,27 +23,57 @@
                 </div>
             </div>
         </div>
-        <form class="auth-form">
+        <!-- Display validation errors for the entire form -->
+
+        <form class="auth-form" action="{{ Route('register_user') }}" method="POST">
+            @csrf
+            @method('POST')
+
             <div class="auth-form-content">
                 <h3 class="auth-form-title">Register a new account.</h3>
-                <div class="form-group"><input type="text" class="form-control" placeholder="enter full name"></div>
-                <div class="form-group"><input type="email" class="form-control" placeholder="enter email address">
+                {{-- @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif --}}
+                <div class="form-group">
+                    <input type="text" class="form-control" required placeholder="enter full name" name="name"
+                        value="{{ old('name') }}">
                 </div>
-                <div class="form-group"><input type="password" class="form-control" placeholder="enter strong password">
+                @error('name')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+                <div class="form-group">
+                    <input type="email" required class="form-control" placeholder="enter email address"name="email"
+                        value="{{ old('email') }}">
                 </div>
-                <div class="form-group"><input type="password" class="form-control" placeholder="enter reapet password">
+                @error('email')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+                <div class="form-group">
+                    <input required type="password" class="form-control" placeholder="enter strong password"
+                        name="password">
                 </div>
-                <div class="form-check"><input class="form-check-input" type="checkbox" id="checkAgree"><label
-                        class="form-check-label" for="checkAgree">I agree to the <a href="#">Terms </a> and <a
-                            href="#">Privacy Policy</a>.</label></div><button type="submit"
-                    class="form-btn">register</button>
+
+                @error('password')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+                {{-- <div class="form-group"><input type="password" class="form-control" placeholder="enter reapet password"
+                        name="confirmed">
+                </div> --}}
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkAgree"><label class="form-check-label"
+                        for="checkAgree">I agree to the <a href="#">Terms </a> and <a href="#">Privacy
+                            Policy</a>.</label>
+                </div>
+
+                <button type="submit" class="form-btn">register</button>
                 <div class="auth-form-or"><span>or</span></div>
-                <ul class="auth-form-continue">
-                    <li><a class="facebook" href="#"><i class="icofont-facebook"></i><span>Continue with
-                                Facebook</span></a></li>
-                    <li><a class="instagram" href="#"><i class="icofont-instagram"></i><span>Continue with
-                                Instagram</span></a></li>
-                </ul>
+
                 <p class="auth-form-text">Already have an account? <a href="login.html">Login here</a></p>
             </div>
         </form>

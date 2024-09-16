@@ -17,8 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password')->nullable();
-            $table->string('google_id')->nullable();
+            $table->string('password');
             $table->boolean('verified')->default(false);
             $table->string('verification_code')->nullable();
             $table->string('vendor_name')->unique()->nullable();
@@ -26,7 +25,7 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->string('location')->unique()->nullable();
             $table->string('website')->nullable();
-            $table->enum('role', ['user', 'admin', 'vendor']);
+            $table->enum('role', ['user', 'admin', 'vendor'])->default('user');
             $table->boolean('user_can_add_products')->default(false);
             $table->rememberToken();
             $table->timestamps();

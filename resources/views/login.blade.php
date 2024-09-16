@@ -26,22 +26,23 @@
         <form class="auth-form">
             <div class="auth-form-content">
                 <h3 class="auth-form-title">Login with your credentials.</h3>
-                <div class="form-group"><input type="email" class="form-control" placeholder="enter your email"></div>
-                <div class="form-group"><input type="password" class="form-control" placeholder="enter your password">
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="enter your email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="enter your password">
                 </div>
                 <div class="form-group-content">
-                    <div class="form-check mb-0"><input class="form-check-input" type="checkbox" id="checkAgree"><label
-                            class="form-check-label" for="checkAgree">Remember me.</label></div><a class="auth-forgot"
-                        href="forgot-password.html">forgot password?</a>
-                </div><button type="submit" class="form-btn">login</button>
+                    <div class="form-check mb-0">
+                        <input class="form-check-input" type="checkbox" id="checkAgree"><label class="form-check-label"
+                            for="checkAgree">Remember me.</label>
+                    </div><a class="auth-forgot" href="forgot-password.html">forgot password?</a>
+                </div>
+                <button type="submit" class="form-btn">login</button>
                 <div class="auth-form-or"><span>or</span></div>
-                <ul class="auth-form-continue">
-                    <li><a class="facebook" href="#"><i class="icofont-facebook"></i><span>Continue with
-                                Facebook</span></a></li>
-                    <li><a class="instagram" href="#"><i class="icofont-instagram"></i><span>Continue with
-                                Instagram</span></a></li>
-                </ul>
-                <p class="auth-form-text">Don't have any account? <a href="register.html">Register here</a></p>
+
+                <p class="auth-form-text">Don't have any account? <a href="{{ Route('register') }}">Register here</a>
+                </p>
             </div>
         </form>
     </section>

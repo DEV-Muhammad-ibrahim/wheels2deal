@@ -3,6 +3,8 @@
 
 
 use App\Http\Controllers\AdminViewController;
+use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Auth\RegisterUserController;
 use App\Http\Controllers\RolePermissionController;
 use App\Http\Controllers\ViewController;
 use Illuminate\Support\Facades\Route;
@@ -55,7 +57,8 @@ Route::prefix('admin')->group(function () {
 });
 
 
-
+Route::get('/users', [AuthController::class, 'users']);
+Route::post('/register', [RegisterUserController::class, 'register'])->name('register_user');
 
 
 
