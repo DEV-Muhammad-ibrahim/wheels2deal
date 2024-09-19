@@ -20,15 +20,19 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'google_id',
-        'verified',
-        'verification_code',
         'vendor_name',
         'profile_picture',
+        'cover_picture',
         'description',
-        'location',
+        'city',
+        'phone_no',
+        'zip',
         'website',
         'role',
+        'account_type',
+        'user_can_add_products',
+        'verified',
+        'verification_code',
 
     ];
 

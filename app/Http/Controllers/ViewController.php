@@ -167,6 +167,10 @@ class ViewController extends Controller
     }
     public function login()
     {
+
+        if (auth()) {
+            return redirect()->route('index');
+        }
         $view = 'login';
         if (view()->exists($view)) {
             return view($view);
@@ -221,6 +225,9 @@ class ViewController extends Controller
     }
     public function register()
     {
+        if (auth()) {
+            return redirect()->route('index');
+        }
         $view = 'register';
         if (view()->exists($view)) {
             return view($view);
@@ -266,12 +273,8 @@ class ViewController extends Controller
     }
     public function logout()
     {
-        $view = 'login';
-        if (view()->exists($view)) {
-            return view($view);
-        } else {
-            return view('404');
-        }
+        Auth::logout();
+        return redirect()->route('login');
     }
     public function admin_dashboard()
     {

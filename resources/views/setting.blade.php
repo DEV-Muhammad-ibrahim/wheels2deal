@@ -26,49 +26,75 @@
                         <div class="common-card-header">
                             <h4 class="common-card-header-title">settings nav</h4>
                         </div>
-                        <div class="nav nav-pills setting-nav"><button type="button" data-bs-toggle="pill"
-                                data-bs-target="#account" class="nav-link active"><i
-                                    class="material-icons">account_circle</i><span>account
-                                    details</span></button><button type="button" data-bs-toggle="pill"
-                                data-bs-target="#billing" class="nav-link"><i
+                        <div class="nav nav-pills setting-nav">
+                            <button type="button" data-bs-toggle="pill" data-bs-target="#account"
+                                class="nav-link active"><i class="material-icons">account_circle</i><span>account
+                                    details</span>
+                            </button>
+                            {{-- <button type="button" data-bs-toggle="pill" data-bs-target="#billing" class="nav-link"><i
                                     class="material-icons">shopping_bag</i><span>billing
-                                    information</span></button><button type="button" data-bs-toggle="pill"
-                                data-bs-target="#social" class="nav-link"><i
-                                    class="material-icons">interests</i><span>social networks</span></button><button
-                                type="button" data-bs-toggle="pill" data-bs-target="#password" class="nav-link"><i
-                                    class="material-icons">https</i><span>change password</span></button><button
-                                type="button" data-bs-toggle="pill" data-bs-target="#notify" class="nav-link"><i
-                                    class="material-icons">notifications_active</i><span>notifications</span></button>
+                                    information</span>
+                            </button> --}}
+                            {{-- <button type="button" data-bs-toggle="pill" data-bs-target="#social" class="nav-link"><i
+                                    class="material-icons">interests</i><span>social networks</span>
+                            </button> --}}
+                            <button type="button" data-bs-toggle="pill" data-bs-target="#password" class="nav-link"><i
+                                    class="material-icons">https</i><span>change password</span>
+                            </button>
+                            {{-- <button type="button" data-bs-toggle="pill" data-bs-target="#notify" class="nav-link"><i
+                                    class="material-icons">notifications_active</i><span>notifications</span>
+                            </button> --}}
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7 col-xl-8">
                     <div class="tab-pane fade show active" id="account">
-                        <form>
+                        <form action="{{ Route('register_vendor') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            @method('POST')
                             <div class="common-card">
+                                @if (session('success'))
+                                    <div class="alert alert-success">
+                                        {{ session('success') }}
+                                    </div>
+                                @endif
                                 <div class="common-card-header">
                                     <h4 class="common-card-header-title">account media</h4>
                                 </div>
                                 <div class="common-card-body">
                                     <div class="row row-cols-1">
                                         <div class="col">
-                                            <div class="form-group"><label class="form-label">profile Image
-                                                    <span>*</span></label>
-                                                <div class="file-form"><input class="file-input" type="file"
-                                                        id="profile"><label for="profile"
-                                                        class="file-icon material-icons">file_present</label><button
-                                                        type="button"
-                                                        class="file-cancel material-icons">cancel</button></div>
+                                            <div class="form-group">
+                                                <label class="form-label">profile Image
+                                                    <span>*</span>
+                                                </label>
+                                                <div class="file-form">
+                                                    <input class="file-input" type="file" id="profile"
+                                                        name="profile_image">
+                                                    <label for="profile"
+                                                        class="file-icon material-icons">file_present</label>
+                                                    <button type="button"
+                                                        class="file-cancel material-icons">cancel</button>
+                                                </div>
+                                                @error('profile_image')
+                                                    <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="form-group"><label class="form-label">covar Image
                                                     <span>*</span></label>
-                                                <div class="file-form"><input class="file-input" type="file"
-                                                        id="covar"><label for="covar"
-                                                        class="file-icon material-icons">file_present</label><button
-                                                        type="button"
-                                                        class="file-cancel material-icons">cancel</button></div>
+                                                <div class="file-form">
+                                                    <input class="file-input" type="file" id="covar"
+                                                        name="cover_image">
+                                                    <label for="covar" class="file-icon material-icons">file_present
+                                                    </label>
+                                                    <button type="button"
+                                                        class="file-cancel material-icons">cancel</button>
+                                                </div>
+                                                @error('cover_image')
+                                                    <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                         </div>
                                     </div>
@@ -80,61 +106,121 @@
                                 </div>
                                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-1 row-cols-xl-2">
                                     <div class="col">
-                                        <div class="form-group"><label class="form-label">account name
-                                                <span>*</span></label><input type="text" class="form-control">
+                                        <div class="form-group">
+                                            <label class="form-label">account name
+                                                <span>*</span>
+                                            </label>
+                                            <input type="text" class="form-control" name="vendor_name"
+                                                value="{{ auth()->check() ? auth()->user()->vendor_name : old('vendor_name', '') }}">
                                         </div>
+                                        @error('vendor_name')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
                                     </div>
+
                                     <div class="col">
-                                        <div class="form-group"><label class="form-label">account type
-                                                <span>*</span></label><select class="form-select">
+                                        <div class="form-group">
+                                            <label class="form-label">account type
+                                                <span>*</span></label>
+                                            <select class="form-select" name="account_type">
                                                 <option selected>---</option>
-                                                <option value="1">individual</option>
-                                                <option value="2">dealership</option>
-                                            </select></div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group"><label class="form-label">phone number
-                                                <span>*</span></label><input type="tel" class="form-control">
+                                                <option value="individual">individual</option>
+                                                <option value="dealership">dealership</option>
+                                            </select>
+                                            @error('account_type')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <div class="form-group"><label class="form-label">email address
-                                                <span>*</span></label><input type="email" class="form-control">
+                                        <div class="form-group">
+                                            <label class="form-label">phone number
+                                                <span>*</span>
+                                            </label>
+                                            <input type="tel" class="form-control" name="phone_no"
+                                                value="{{ auth()->check() ? auth()->user()->vendor_name : old('phone_no', '') }}">
+                                            @error('phone_no')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <div class="form-group"><label class="form-label">website
-                                                <span>*</span></label><input type="url" class="form-control">
+                                        <div class="form-group">
+                                            <label class="form-label">email address
+                                                <span>*</span>
+                                            </label>
+                                            <input disabled ="email" class="form-control" name="email"
+                                                value="{{ auth()->check() ? auth()->user()->email : '' }}">
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <div class="form-group"><label class="form-label">city
-                                                <span>*</span></label><input type="text" class="form-control">
+                                        <div class="form-group">
+                                            <label class="form-label">website
+                                                <span>*</span>
+                                            </label>
+                                            <input type="url" class="form-control" name="website"
+                                                value="{{ auth()->check() ? auth()->user()->vendor_name : old('website', '') }}">
+                                            @error('website')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <div class="form-group"><label class="form-label">state
-                                                <span>*</span></label><input type="text" class="form-control">
+                                        <div class="form-group">
+                                            <label class="form-label">city
+                                                <span>*</span>
+                                            </label>
+                                            <input type="text" class="form-control" name="city"
+                                                value="{{ auth()->check() ? auth()->user()->vendor_name : old('city', '') }}">
+                                            @error('city')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <div class="form-group"><label class="form-label">zip
-                                                <span>*</span></label><input type="text" class="form-control">
+                                        <div class="form-group">
+                                            <label class="form-label">state
+                                                <span>*</span>
+                                            </label>
+                                            <input type="text" class="form-control" name="state"
+                                                value="{{ auth()->check() ? auth()->user()->vendor_name : old('state', '') }}">
+                                            @error('state')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label class="form-label">zip
+                                                <span>*</span>
+                                            </label>
+                                            <input type="text" class="form-control" name="zip"
+                                                value="{{ auth()->check() ? auth()->user()->vendor_name : old('zip', '') }}">
+                                            @error('zip')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <div class="form-group"><label class="form-label">about vendor
-                                                <span>*</span></label>
-                                            <textarea class="form-control"></textarea>
+                                        <div class="form-group">
+                                            <label class="form-label">about vendor
+                                                <span>*</span>
+                                            </label>
+                                            <textarea class="form-control" name="description"
+                                                value="{{ auth()->check() ? auth()->user()->descriptiom : old('description', '') }}"></textarea>
+                                            @error('description')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"><button type="submit"
-                                            class="form-btn">save changes</button></div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <button type="submit" class="form-btn">save changes</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <div class="tab-pane fade" id="billing">
+                    {{-- <div class="tab-pane fade" id="billing">
                         <form>
                             <div class="common-card">
                                 <div class="common-card-header">
@@ -201,8 +287,8 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
-                    <div class="tab-pane fade" id="social">
+                    </div> --}}
+                    {{-- <div class="tab-pane fade" id="social">
                         <form>
                             <div class="common-card">
                                 <div class="common-card-header">
@@ -238,7 +324,7 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
+                    </div> --}}
                     <div class="tab-pane fade" id="password">
                         <form>
                             <div class="common-card">
@@ -264,7 +350,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="tab-pane fade" id="notify">
+                    {{-- <div class="tab-pane fade" id="notify">
                         <form>
                             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-1 row-cols-xl-2">
                                 <div class="col">
@@ -371,7 +457,7 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

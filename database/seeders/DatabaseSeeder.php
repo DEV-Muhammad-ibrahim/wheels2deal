@@ -18,10 +18,18 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(10)->create();
 
-        // User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
-
+        User::factory()->create([
+            'name' => 'ibrahim',
+            'email' => 'ibrahim97416@gmail.com',
+            'password' => 'ibr@himTHA123',
+        ]);
+        User::factory()->create([
+            'name' => 'admin',
+            'email' => 'admin@wheels2deals.com',
+            'password' => '@Wheels2deals',
+            'role' => 'admin',
+            'verified' => true,
+            'user_can_add_products' => true,
+        ]);
     }
 }

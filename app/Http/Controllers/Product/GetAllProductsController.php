@@ -10,6 +10,6 @@ class GetAllProductsController extends Controller
 {
     public function get_active_products()
     {
-        // $products = Product::
+        $products = Product::all();
     }
 }

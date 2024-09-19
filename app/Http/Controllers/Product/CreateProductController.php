@@ -16,6 +16,8 @@ class CreateProductController extends Controller
     public function create_product(Request $request)
     {
         //validation block
+
+        dd($request);
         try {
             //code...
             $validatedData =   $request->validate([

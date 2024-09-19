@@ -58,4 +58,8 @@ class AdminViewController extends Controller
     {
         return view('admin.admin-authentication-new-password');
     }
+    public function all_users()
+    {
+        return view('admin.admin-users');
+    }
 }

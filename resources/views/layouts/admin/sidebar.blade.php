@@ -46,6 +46,20 @@
                                 Details</span></a></li>
                 </ul>
             </li>
+            <li class="sub-menu">
+                <a href="javascript:;" class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <i data-feather="user" stroke-width="1.5" height="18" class="me2"></i>
+                        <span>Users</span>
+                    </div>
+                    <i class="arrow" data-feather="chevron-right" height="14"></i>
+                </a>
+                <ul class="sub-menu-group">
+                    <li><a href="{{ Route('admin_account') }}"><span>Simple Users</span></a></li>
+                    <li><a href="{{ Route('admin_settings') }}"><span>Vendors</span></a></li>
+
+                </ul>
+            </li>
 
 
 

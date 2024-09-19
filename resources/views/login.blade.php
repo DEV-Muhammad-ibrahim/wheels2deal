@@ -23,15 +23,28 @@
                 </div>
             </div>
         </div>
-        <form class="auth-form">
+        <form class="auth-form" method="POST" action="{{ Route('login_all') }}">
+            @csrf
+            @method('POST')
             <div class="auth-form-content">
                 <h3 class="auth-form-title">Login with your credentials.</h3>
+                @if ($errors->has('login_error'))
+                    <div class="alert alert-danger">
+                        {{ $errors->first('login_error') }}
+                    </div>
+                @endif
                 <div class="form-group">
-                    <input type="email" class="form-control" placeholder="enter your email">
+                    <input type="email" class="form-control" placeholder="enter your email" name="email">
                 </div>
+                @error('email')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="enter your password">
+                    <input type="password" class="form-control" placeholder="enter your password" name="password">
                 </div>
+                @error('password')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
                 <div class="form-group-content">
                     <div class="form-check mb-0">
                         <input class="form-check-input" type="checkbox" id="checkAgree"><label class="form-check-label"

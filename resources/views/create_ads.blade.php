@@ -39,7 +39,9 @@
                     </div>
                 </div>
                 <div class="col-lg-7 col-xl-8">
-                    <form class="create-ads-form">
+                    <form class="create-ads-form" action="{{ Route('ad_create') }}" method="POST">
+                        {{-- @csrf --}}
+                        @method('POST')
                         <div class="common-card active">
                             <div class="common-card-header">
                                 <h4 class="common-card-header-title">vehicle information</h4>
@@ -252,9 +254,11 @@
                                                     for="check14">Rain Sensing</label></div>
                                         </div>
                                         <div class="col">
-                                            <div class="form-check"><input class="form-check-input" type="checkbox"
-                                                    id="check15"><label class="form-check-label"
-                                                    for="check15">Vanity Mirror</label></div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="check15"
+                                                    name="Vanity mirror">
+                                                <label class="form-check-label" for="check15">Vanity Mirror</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -263,9 +267,13 @@
                                     <div
                                         class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-2 row-cols-xl-3">
                                         <div class="col">
-                                            <div class="form-check form-switch"><input class="form-check-input"
-                                                    type="checkbox" id="switch1"><label class="form-check-label"
-                                                    for="switch1">Air Conditioning</label></div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="switch1"
+                                                    name="Air
+                                                    Conditioning">
+                                                <label class="form-check-label" for="switch1">Air
+                                                    Conditioning</label>
+                                            </div>
                                         </div>
                                         <div class="col">
                                             <div class="form-check form-switch"><input class="form-check-input"
@@ -328,9 +336,10 @@
                                                     for="switch13">CD Player</label></div>
                                         </div>
                                         <div class="col">
-                                            <div class="form-check form-switch"><input class="form-check-input"
-                                                    type="checkbox" id="switch14"><label class="form-check-label"
-                                                    for="switch14">Side Mirror</label></div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="switch14">
+                                                <label class="form-check-label" for="switch14">Side Mirror</label>
+                                            </div>
                                         </div>
                                         <div class="col">
                                             <div class="form-check form-switch"><input class="form-check-input"
@@ -347,12 +356,17 @@
                                             <div class="form-group-radio"><label
                                                     class="form-group-radio-label">Antilock Brakes?</label>
                                                 <div class="form-group-radio-check">
-                                                    <div class="form-check"><input class="form-check-input"
-                                                            type="radio" name="radioGroup1" id="radio1"><label
-                                                            class="form-check-label" for="radio1">yes</label></div>
-                                                    <div class="form-check"><input class="form-check-input"
-                                                            type="radio" name="radioGroup1" id="radio2"><label
-                                                            class="form-check-label" for="radio2">no</label></div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                            type="radio"name="radioGroup1" id="radio1"
+                                                            value="yes">
+                                                        <label class="form-check-label" for="radio1">yes</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="radioGroup1" id="radio2" value="no">
+                                                        <label class="form-check-label" for="radio2">no</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -416,8 +430,10 @@
                                                             type="radio" name="radioGroup6" id="radio11"><label
                                                             class="form-check-label" for="radio11">yes</label></div>
                                                     <div class="form-check"><input class="form-check-input"
-                                                            type="radio" name="radioGroup6" id="radio12"><label
-                                                            class="form-check-label" for="radio12">no</label></div>
+                                                            type="radio" name="radioGroup6" id="radio12"
+                                                            name="radio">
+                                                        <label class="form-check-label" for="radio12">no</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -705,10 +721,12 @@
                                                 agree to the <a href="#">terms of use</a>and <a
                                                     href="#">privacy policy</a>.</label></div>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center"><button
-                                            type="submit" class="form-btn mb-2">pay & publish</button><small>You
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                                        <button type="submit" class="form-btn mb-2">pay & publish</button>
+                                        <small>You
                                             will receive an invoice and a confirmation will be sent to your
-                                            email</small></div>
+                                            email</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>

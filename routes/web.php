@@ -4,12 +4,25 @@
 
 use App\Http\Controllers\AdminViewController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Auth\LoginAllController;
 use App\Http\Controllers\Auth\RegisterUserController;
+use App\Http\Controllers\Auth\RegisterVendorController;
+use App\Http\Controllers\Product\CreateProductController;
 use App\Http\Controllers\RolePermissionController;
 use App\Http\Controllers\ViewController;
+
 use Illuminate\Support\Facades\Route;
 
+// Route::group(['middleware' => ['auth', 'role:admin']], function () {
+// Route::get('/dashboard', function () {
+//     // ...
+// });
+// Route::get('/profile', function () {
+//     // ...
+// });
 Route::get('/', [ViewController::class, 'index'])->name('index');
+// });
+
 Route::get('/404', [ViewController::class, 'error'])->name('404');
 Route::get('/about', [ViewController::class, 'about'])->name('about');
 Route::get('/blog_author', [ViewController::class, 'blog_author'])->name('blog_author');
@@ -27,15 +40,14 @@ Route::get('/forgot_password', [ViewController::class, 'forgot_password'])->name
 Route::get('/inventory_grid', [ViewController::class, 'inventory_grid'])->name('inventory_grid');
 Route::get('/inventory_list', [ViewController::class, 'inventory_list'])->name('inventory_list');
 Route::get('/inventory_single', [ViewController::class, 'inventory_single'])->name('inventory_single');
-Route::get('/login', [ViewController::class, 'login'])->name('login');
 Route::get('/notify', [ViewController::class, 'notify'])->name('notify');
 Route::get('/posted_ads', [ViewController::class, 'posted_ads'])->name('posted_ads');
 Route::get('/pricing_plan', [ViewController::class, 'pricing_plan'])->name('pricing_plan');
+Route::get('/login', [ViewController::class, 'login'])->name('login');
 Route::get('/privacy', [ViewController::class, 'privacy'])->name('privacy');
 Route::get('/profile', [ViewController::class, 'profile'])->name('profile');
 Route::get('/register', [ViewController::class, 'register'])->name('register');
 Route::get('/review', [ViewController::class, 'review'])->name('review');
-Route::get('/setting', [ViewController::class, 'setting'])->name('setting');
 Route::get('/vendor_grid', [ViewController::class, 'vendor_grid'])->name('vendor_grid');
 Route::get('/vendor_list', [ViewController::class, 'vendor_list'])->name('vendor_list');
 Route::get('/logout', [ViewController::class, 'logout'])->name('logout');
@@ -50,18 +62,24 @@ Route::prefix('admin')->group(function () {
     Route::get('/login', [AdminViewController::class, 'login'])->name('admin_login');
     Route::get('/signup', [AdminViewController::class, 'signup'])->name('admin_signup');
     Route::get('/account', [AdminViewController::class, 'account'])->name('admin_account');
-    Route::get('/settings', [AdminViewController::class, 'settings'])->name('admin_settings');
     Route::get('/chat', [AdminViewController::class, 'chat'])->name('admin_chat');
     Route::get('/reset-password', [AdminViewController::class, 'reset_password'])->name('admin_reset_password');
     Route::get('/new-password', [AdminViewController::class, 'new_password'])->name('admin_new_password');
+    Route::get('/settings', [AdminViewController::class, 'settings'])->name('admin_settings');
+    Route::get('/users', [AdminViewController::class, 'all_users'])->name('all_users');
 });
 
 
-Route::get('/users', [AuthController::class, 'users']);
+
+Route::middleware('auth')->group(function () {
+    Route::get('/setting', [ViewController::class, 'setting'])->name('setting');
+    Route::get('/users', [AuthController::class, 'users']);
+    Route::post('/vendor', [RegisterVendorController::class, 'register'])->name('register_vendor');
+});
+Route::post('/login', [LoginAllController::class, 'login_all'])->name('login_all');
+
 Route::post('/register', [RegisterUserController::class, 'register'])->name('register_user');
-
-
-
+Route::post('/create_ad', [CreateProductController::class, 'create_product'])->name('ad_create');
 Route::fallback(function () {
     return redirect('/404');
 });
